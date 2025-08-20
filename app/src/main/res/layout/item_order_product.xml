@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    >
+    <ImageView
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:background="@drawable/a16"
+        android:id="@+id/imgOrderProduct"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên sản phẩm: "
+            android:textColor="@color/black"
+            android:id="@+id/nameProductOrder"
+            android:layout_marginBottom="10sp"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Giá tiền: "
+            android:textColor="@color/black"
+            android:id="@+id/priceProductOrder"
+            android:textSize="15sp"
+            android:layout_marginBottom="10sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số luọng: "
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:id="@+id/quatityProductOrder"
+            android:layout_marginBottom="10sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Giá trả: "
+            android:textColor="@color/red"
+            android:id="@+id/totalProductOrder"
+            android:layout_marginBottom="10sp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

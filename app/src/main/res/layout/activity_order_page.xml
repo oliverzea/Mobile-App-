@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.OrderPageActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarOrder"
+        android:layout_width="match_parent"
+        android:background="@color/orange"
+        app:title="Chi tiết đơn hàng"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thông tin khách hàng"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:textDirection="firstStrong"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:id="@+id/nameCustomer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên khách hàng: Phan Tấn Phúc"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10sp"
+            />
+        <TextView
+            android:id="@+id/numberPhoneCustomer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số điện thoại: 0564068652"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10sp"
+            />
+    <TextView
+        android:id="@+id/addressDelivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Địa chỉ giao hàng:87a Phan Văn Hân P17 Q.BT"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10sp"
+        />
+        <Button
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botron"
+            android:id="@+id/changeInfor"
+            android:text="Thay đổi thông tin"
+            android:layout_marginBottom="10sp"
+            />
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"/>
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chọn phương thức thanh toán"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textDirection="firstStrong"
+        />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/payByCash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thanh toán bằng tiền mặt"
+            android:textSize="20sp"
+            android:layout_marginBottom="10sp"
+            />
+        <RadioButton
+            android:id="@+id/payByCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thanh toán bằng thẻ ngân hàng"
+            android:textSize="20sp"
+            android:layout_marginBottom="10sp"
+            />
+
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_marginBottom="10sp"
+        />
+    <TextView
+        android:layout_marginTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sản phẩm"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textDirection="firstStrong"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recylcerOrder"
+        android:layout_width="match_parent"
+        android:layout_height="150sp"/>
+
+    <TextView
+        android:id="@+id/totalOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tồng tiền: "
+        android:textSize="30sp"
+        android:textColor="@color/red"
+        android:textDirection="firstStrong"
+        android:layout_marginBottom="5sp"
+        />
+    <Button
+        android:id="@+id/btnConfirmPay"
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+        android:layout_gravity="center"
+        android:text="Xác nhận thanh toán"
+        android:background="@drawable/botron"
+        />
+</LinearLayout>

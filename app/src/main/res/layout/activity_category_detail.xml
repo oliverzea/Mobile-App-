@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Activity.ProductDetailActivity">
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolBarCateDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:navigationIcon="@drawable/arrow_back"
+        app:titleCentered="true" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name category : "
+                android:textSize="24dp" />
+
+            <EditText
+                android:id="@+id/edtNameCateDetail"
+                android:layout_width="300dp"
+                android:layout_marginLeft="30dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/corner_rounded_orange"
+                android:padding="12dp"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID Cate : "
+                android:textSize="20dp" />
+
+           <TextView
+               android:id="@+id/txtIdCateD"
+               android:layout_width="300dp"
+               android:layout_height="wrap_content"
+               android:background="@drawable/corner_rounded_orange"
+               android:padding="13dp"
+               android:layout_marginLeft="30dp"/>.
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnDeCate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/gray_light"/>
+        <Button
+            android:id="@+id/btnUpCate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="Update"
+            android:backgroundTint="@color/app_main_bg"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

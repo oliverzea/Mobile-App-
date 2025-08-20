@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.CartFragment"
+
+    >
+    <LinearLayout
+        android:id="@+id/linearCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50sp"
+        >
+        <ListView
+            android:layout_weight="1"
+            android:id="@+id/listCart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            >
+
+        </ListView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+          >
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tổng cộng: "
+                android:textColor="@color/red"
+                android:textSize="30sp"
+                />
+
+            <TextView
+                android:id="@+id/totalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="0 VNĐ"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnDatHang"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:text="Dat hang"
+            android:layout_gravity="center"
+            android:background="@drawable/botron"
+
+            />
+
+    </LinearLayout>
+
+</FrameLayout>

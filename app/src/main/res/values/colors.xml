@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="orange">#FEAE96</color>
+    <color name="red">#CF0C0C</color>
+    <color name="hong">#FE979C</color>
+    <color name="hong_cam">#FE979C</color>
+    <color name="cam_hong">#FEAE96</color>
+    <color name="da">#F6E8DF</color>
+    <color name="app_main_bg">#FEAE96</color>
+    <color name="gray_light">#959595</color>
+</resources>

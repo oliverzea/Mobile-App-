@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    <item-->
+<!--        android:title="Trang chủ"-->
+<!--        android:id="@+id/nav_home"-->
+<!--        android:icon="@drawable/ic_home"/>-->
+    <group>
+        <item
+            android:title="Thông tin"
+            android:id="@+id/nav_infor"
+            android:icon="@drawable/ic_infor"/>
+        <item
+            android:title="Đơn hàng đã xác nhận"
+            android:id="@+id/nav_order"
+            android:icon="@drawable/ic_cart"/>
+        <item
+            android:title="Đơn hàng đang giao"
+            android:id="@+id/nav_deli"
+            android:icon="@drawable/ic_deli"/>
+        <item
+            android:title="Đơn hàng giao hoàn tất"
+            android:id="@+id/nav_success"
+            android:icon="@drawable/ic_success"/>
+
+
+
+    </group>
+
+        <item
+            android:title="Logout"
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_success"/>
+</menu>

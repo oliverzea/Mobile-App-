@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "838005736835",
+    "project_id": "appbanquana",
+    "storage_bucket": "appbanquana.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:838005736835:android:1dae10cf64ec820a7ca2b6",
+        "android_client_info": {
+          "package_name": "com.example.banquanao"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiK6drpgzco_HcSxyjyhXgp8RWYOcernY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".Activity.AddProActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbarAddSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:navigationIcon="@drawable/arrow_back"
+        app:titleCentered="true" />
+
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Weight :"
+        android:textSize="16sp" />
+    <EditText
+        android:id="@+id/edtWeightAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/corner_rounded_orange"
+        android:ems="10"
+        android:hint="Nhập cân nặng "
+        android:inputType="text"
+        android:padding="16dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Height :"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edtHeightAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/corner_rounded_orange"
+        android:ems="10"
+        android:hint="Nhập chiều cao "
+        android:inputType="text"
+        android:padding="16dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gender :"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edtSexAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/corner_rounded_orange"
+        android:ems="10"
+        android:hint="Nhập giới tính "
+        android:inputType="text"
+        android:padding="16dp" />
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Type :"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edtTypeAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Nhập loại vải "
+        android:background="@drawable/corner_rounded_orange"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="16dp" />
+
+
+
+    <Button
+        android:id="@+id/btnSaveSize"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/app_main_bg"
+        android:layout_gravity="center"
+        android:text="Save" />
+
+
+</LinearLayout>

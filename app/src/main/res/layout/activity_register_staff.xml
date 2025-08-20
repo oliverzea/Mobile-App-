@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6E8DF"
+    android:orientation="vertical"
+    tools:context=".Activity.RegisterStaffActivity">
+
+    <Button
+        android:id="@+id/buttonBack_ReStaff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F6E8DF"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:drawableLeft="@drawable/arrow_back_ios" />
+
+    <TextView
+        android:id="@+id/textViewReStaffPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="Create account staff"
+        android:textAlignment="center"
+        android:textColor="#FE979C"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/costum_layout"
+            android:orientation="vertical"
+            android:paddingBottom="45dp">
+
+            <EditText
+                android:id="@+id/editTextName_ReStaff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="15dp"
+
+                android:background="@drawable/corner_rounded"
+                android:drawableLeft="@drawable/person"
+                android:drawablePadding="12dp"
+
+                android:ems="10"
+                android:hint="Full name"
+                android:inputType="text"
+                android:paddingLeft="25dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
+
+            <EditText
+                android:id="@+id/editTextPhone_ReStaff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="15dp"
+
+                android:background="@drawable/corner_rounded"
+                android:drawableLeft="@drawable/phone"
+                android:drawablePadding="12dp"
+
+                android:ems="10"
+                android:hint="Phone number"
+                android:inputType="number"
+                android:paddingLeft="25dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
+
+            <EditText
+                android:id="@+id/editTextEmail_ReStaff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/corner_rounded"
+                android:drawableLeft="@drawable/email"
+
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="25dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
+
+            <EditText
+                android:id="@+id/editTextNewPass_ReStaff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="15dp"
+
+                android:background="@drawable/corner_rounded"
+                android:drawableLeft="@drawable/lock"
+                android:drawableRight="@drawable/visibility_off"
+                android:drawablePadding="12dp"
+
+                android:ems="10"
+                android:hint="Create new password"
+                android:inputType="textPassword"
+                android:longClickable="false"
+                android:paddingLeft="25dp"
+                android:paddingTop="10dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="10dp" />
+
+            <EditText
+                android:id="@+id/editTextRePass_ReStaff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="15dp"
+
+                android:background="@drawable/corner_rounded"
+                android:drawableLeft="@drawable/lock"
+                android:drawableRight="@drawable/visibility_off"
+                android:drawablePadding="12dp"
+
+                android:ems="10"
+                android:hint="Enter password again"
+                android:inputType="textPassword"
+                android:longClickable="false"
+                android:paddingLeft="25dp"
+                android:paddingTop="10dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="10dp" />
+
+            <EditText
+                android:id="@+id/editTextBirthday_ReStaff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="15dp"
+
+                android:background="@drawable/corner_rounded"
+                android:drawableLeft="@drawable/date"
+                android:drawablePadding="12dp"
+
+                android:ems="10"
+                android:hint="Birthday yyyy/mm/dd"
+                android:inputType="date"
+                android:paddingLeft="25dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonRegister_ReStaff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="440dp"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/costum_buttom"
+            android:text="Register"
+            android:textSize="20dp"
+            app:backgroundTint="@null" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/buttonLogin_ReStaff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:paddingTop="0dp"
+        android:text="Login"
+        android:textColor="#FE979C"
+        android:textSize="20dp"
+        app:backgroundTint="#F6E8DF" />
+
+
+</LinearLayout>

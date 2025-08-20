@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+>
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarDetail"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="Chi tiết sản phẩm"
+        android:layout_gravity="left|center_vertical"
+
+        />
+
+    <LinearLayout
+        android:layout_below="@+id/toolbarDetail"
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+
+        >
+
+
+    <ImageView
+        android:id="@+id/imgProductDetail"
+        android:background="@drawable/q4"
+        android:layout_marginTop="10sp"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:layout_marginBottom="10sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameProductDetail"
+        android:text="Quan nam"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/priceProductDetail"
+        android:text="Gia ten: 300000d"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sizeProductDetail"
+        android:text="Size : 165m , 65kg , Nam"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="5"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="So luong"
+            android:textSize="30sp"
+            android:layout_marginRight="30sp"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/btnSub"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@drawable/icon_sub"
+            android:layout_marginRight="20sp"
+            />
+        <EditText
+            android:id="@+id/editQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:layout_weight="2"
+            android:layout_marginRight="20sp"
+            android:textAlignment="center"
+            />
+
+        <Button
+            android:id="@+id/btnSum"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@drawable/icon_plus"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAddCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:text="Them vao gio hang"
+        />
+    </LinearLayout>
+</RelativeLayout>
